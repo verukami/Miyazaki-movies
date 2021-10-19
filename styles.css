@@ -1,0 +1,115 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: url(https://cdn.shopify.com/s/files/1/0551/2534/4453/products/147-REPTARAZUL_1944x.jpg?v=1615662150);
+}
+
+.container {
+    background: #FFE6E8;
+    position: relative;
+    resize: both;
+    overflow: auto;
+    width: 600px;
+    height: 450px;
+}
+
+.browser-frame {
+    position: relative;
+    padding: 132px 0 55px 0;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,.8);
+    border-image-slice: 171 57 57 515 fill;
+}
+
+.browser-frame::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/131442/netscape.png');
+    border-image-slice: 171 57 57 515 fill;
+    border-image-width: 170px 56px 57px 515px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: repeat repeat; 
+    pointer-events: none;
+}
+
+.center {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+main {
+    padding: 10px 0;
+    background: #FFE6E8;
+    text-align: center;
+    color:#FF4219;
+    height: 100%;
+    overflow: auto;
+}
+
+h1{
+    font-family: "Space Grotesk", sans-serif;;
+    font-size: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 3rem;
+  }
+  
+h3 {
+    font-size: 1.5rem;
+  }
+  
+a {
+    color: #594FA9;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 1rem 2rem 1rem 0;
+  }
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+#img-caption{
+    line-height: 1.4rem;
+    font-size: 1rem;
+     text-align: center; 
+     padding: 4rem 2rem;
+     margin: 1rem;
+     background: #FFC0BB;
+   }
